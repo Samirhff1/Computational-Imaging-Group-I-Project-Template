@@ -39,7 +39,7 @@ We compare three distinct approaches using different *priors*:
 - `notebook_CI.ipynb`: Jupyter notebook containing the code for the experiments, models, and evaluation.
 - `presentazione.md` / `presentazione.pptx`: Presentation slides detailing the problem, methods, and evaluation results.
 - `Group I.pdf`: Final project report.
-- `immagini presentazione/`: Directory containing images used in the presentation and results visualizations.
+- `Output/`: Directory containing images used in the presentation and results visualizations.
 
 ## License
 This project includes a `LICENSE` file. Please refer to it for more details.
