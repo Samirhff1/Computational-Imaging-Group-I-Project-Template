@@ -140,6 +140,8 @@ style: |
 Mohamed Samir Haffoudhi - mohamed.haffoudhi@studio.unibo.it - 0001242845
 Mattia Furini - mattia.furini@studio.unibo.it - 0001233051
 
+**GitHub Repo:** [Computational-Imaging-Group-I](https://github.com/Samirhff1/Computational-Imaging-Group-I-Project-Template.git)
+
 ---
 
 ## The Inverse Problem: Super-Resolution
@@ -158,9 +160,9 @@ Mattia Furini - mattia.furini@studio.unibo.it - 0001233051
 
 We compare three distinct approaches using different *priors*:
 
-1. **End-to-End Learning (UNet):** Supervised mapping from $y$ to $x$.
-2. **Variational Method (Total Variation):** Optimization enforcing gradient sparsity.
-3. **Generative Model (DiffPIR):** Diffusion model as a generative prior for hallucinating details.
+1. **Supervised Post-Processing (UNet):** End-to-end mapping from corrupted images to Ground Truth.
+2. **Total Variation (TV):** Variational optimization using the L1 norm on the image gradient.
+3. **Diffusion Plug-and-Play (DiffPIR):** Alternates diffusion denoising with a variational step for data fidelity.
 
 ---
 
@@ -307,8 +309,9 @@ We compare three distinct approaches using different *priors*:
 
 <div>
 
-* **Robustness:** Successfully handles multiple levels of degradation without requiring prior knowledge of the noise or SR factor.
-* **Over-smoothing:** L1 Loss tends to average out high-frequency details, causing natural textures to look artificially flat compared to generative methods.
+* **Robustness:** Successfully handles multiple levels of degradation.
+* **Over-smoothing:** Causes natural textures to look artificially flat compared to generative methods.
+* **Generalization:** Struggles to reconstruct images outside its specific training distribution (OOD data).
 
 </div>
 
@@ -374,4 +377,3 @@ We compare three distinct approaches using different *priors*:
 
 # Thank you!
 
-*Code available on GitHub*
