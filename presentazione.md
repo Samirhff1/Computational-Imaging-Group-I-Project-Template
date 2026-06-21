@@ -375,5 +375,5 @@ We compare three distinct approaches using different *priors*:
 
 ---
 
-# Thank you!
+## Thank you for your attention.
 
